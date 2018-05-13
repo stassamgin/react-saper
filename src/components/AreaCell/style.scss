@@ -1,0 +1,37 @@
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-wrap: none;
+    overflow: hidden;
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+    background-color: rgba(0,0,0,.1);
+    border: 1px solid #ccc;
+    cursor: pointer;
+
+
+}
+
+.item_null {
+  background-color: darkgray;
+}
+
+.item_0 {
+  color: #ddd;
+}
+
+.item_1 {
+  color: dodgerblue;
+}
+
+.item_2 {
+  color: forestgreen;
+}
+
+.item_3 {
+  color: brown;
+}
+
+

@@ -11,6 +11,7 @@ class MainArea extends Component {
       errorValidation,
       area,
       handlePointClick,
+      handlePointCheck,
       handleOnChangeForm,
       handleButtonFormClick} = this.props
 
@@ -18,7 +19,7 @@ class MainArea extends Component {
       return (
         <div className={styles.settingForm}>
           <h2>Setting</h2>
-          <h3>{errorValidation ? 'Please input correct value' : null}</h3>
+          <h3>{errorValidation.isError ? errorValidation.msg : null}</h3>
           <label className={styles.label}>
             Rows
             <input
@@ -64,6 +65,7 @@ class MainArea extends Component {
                   key={item.id}
                   item={item}
                   handlePointClick={handlePointClick}
+                  handlePointCheck={handlePointCheck}
                 />
               ))
             }</div>
